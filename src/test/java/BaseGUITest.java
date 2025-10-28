@@ -12,7 +12,7 @@ public class BaseGUITest {
 
         @BeforeClass
         public void init(){
-            driver  = BaseDriver.driver("https://automationexercise.com/");
+            driver  = BaseDriver.driver("https://demo.nopcommerce.com/");
             LOGGER.info("Web sitesi acildi");
         }
 
