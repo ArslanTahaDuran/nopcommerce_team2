@@ -53,9 +53,9 @@ public class HomePage extends BasePage {
     private WebElement searchButton;
 
 
-    public void verifyTabMenu(){
-        verifyDisplayed(allMenu,"Categories");
-        LOGGER.info("All menu is displayed");
+    public void checkPage() {
+        verifyDisplayed(allMenu, "Products page acilmadi");
+
     }
 
     public void clickComputersButton(){
