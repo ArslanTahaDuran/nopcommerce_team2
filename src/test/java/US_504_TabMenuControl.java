@@ -18,7 +18,6 @@ public class US_504_TabMenuControl extends BaseGUITest {
     @BeforeClass
     public void pages(){
         homePage=new HomePage(driver);
-
     }
 
     @Test (priority = 1, description = "Accessing the platform's homepage")
