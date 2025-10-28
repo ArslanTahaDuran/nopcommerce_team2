@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class ElectronicsPage extends BasePage{
 
-    @FindBy(xpath ="//h2[@class='title']//a[@href='/camera-photo']")
+    @FindBy(xpath ="//ul[@class='sublist']//a[@href='/camera-photo']")
     private WebElement cameraAndPhotoButton;
 
-    @FindBy (xpath ="//h2[@class='title']//a[@href='/cell-phones']")
+    @FindBy (xpath ="//ul[@class='sublist']//a[@href='/cell-phones']")
     private WebElement cellPhonesButton;
 
-    @FindBy (xpath ="//h2[@class='title']//a[@href='/others']")
+    @FindBy (xpath ="//ul[@class='sublist']//a[@href='/others']")
     private WebElement othersButton;
 
     public ElectronicsPage(WebDriver driver) {

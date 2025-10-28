@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class BooksPage extends BasePage {
 
-@FindBy (xpath = "//ul[@class='top-menu mobile']//a[@href='/books']")
+@FindBy (xpath = "//ul[@class='list']//a[@href='/books']")
     private WebElement booksPage;
 
     public BooksPage(WebDriver driver) {

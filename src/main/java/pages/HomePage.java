@@ -19,25 +19,25 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@class='menu-toggle']")
     private WebElement allMenu;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/computers']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/computers']")
     private WebElement computersButton;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/electronics']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/electronics']")
     private WebElement electronicsButton;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/apparel']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/apparel']")
     private WebElement apparelButton;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/digital-downloads']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/digital-downloads']")
     private WebElement digitalDownloadsButton;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/books']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/books']")
     private WebElement booksButton;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/jewelry']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/jewelry']")
     private WebElement jewelryButton;
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/gift-cards']")
+    @FindBy(xpath = "//ul[@class='top-menu notmobile']//a[@href='/gift-cards']")
     private WebElement giftCardsButton;
 
     @FindBy(xpath = "//a[@class='ico-login']")

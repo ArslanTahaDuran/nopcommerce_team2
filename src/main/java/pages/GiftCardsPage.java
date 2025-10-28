@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class GiftCardsPage extends BasePage {
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/gift-cards']")
+    @FindBy(xpath = "//ul[@class='list']//a[@href='/gift-cards']")
     private WebElement giftCardsPage;
 
     public GiftCardsPage(WebDriver driver) {

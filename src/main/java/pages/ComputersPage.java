@@ -4,23 +4,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.awt.image.LookupOp;
+
 public class ComputersPage extends BasePage{
+
+
+    @FindBy(xpath = "//ul[@class='sublist']//a[@href='/desktops']")
+    private WebElement desktopsButton;
+
+    @FindBy (xpath ="//ul[@class='sublist']//a[@href='/notebooks']")
+    private WebElement notebooksButton;
+
+    @FindBy (xpath ="//ul[@class='sublist']//a[@href='/software']")
+    private WebElement softwareButton;
 
     public ComputersPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//h2[@class='title']//a[@href='/desktops']")
-    private WebElement desktopsButton;
-
-    @FindBy (xpath ="//h2[@class='title']//a[@href='/notebooks']")
-    private WebElement notebooksButton;
-
-    @FindBy (xpath ="//h2[@class='title']//a[@href='/software']")
-    private WebElement softwareButton;
-
-   public void verifyComputersPage(){
-
-   }
 
     public void verifyComputersMenu(){
         verifyDisplayed(desktopsButton, "Desktops");
@@ -30,6 +30,7 @@ public class ComputersPage extends BasePage{
         verifyDisplayed(softwareButton,"Software");
         LOGGER.info("Software is displayed");
     }
+
 
     public void clickDesktopButton(){
         clickElement(desktopsButton);

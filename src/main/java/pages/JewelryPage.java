@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class JewelryPage extends BasePage {
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/jewelry']")
+    @FindBy(xpath = "//ul[@class='list']//a[@href='/jewelry']")
     private WebElement jewelryPage;
 
     public JewelryPage(WebDriver driver) {
