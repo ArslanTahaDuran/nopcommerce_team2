@@ -13,6 +13,9 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
+    @FindBy(xpath = "//div[@class='header-logo']")
+    private WebElement homePage;
+
     @FindBy(xpath = "//div[@class='menu-toggle']")
     private WebElement allMenu;
 
@@ -52,8 +55,12 @@ public class HomePage extends BasePage {
     @FindBy (xpath = "//button[@type='submit']")
     private WebElement searchButton;
 
+    public void verifyHomePage(){
+        verifyDisplayed(homePage,"Home page opened");
+    }
+
     public void checkPage() {
-        verifyDisplayed(allMenu, "Products page acilmadi");
+        verifyDisplayed(allMenu,"All menu is visible");
 
     }
     public void clickComputersButton(){
