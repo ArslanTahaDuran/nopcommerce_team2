@@ -28,7 +28,7 @@ public class US_504_TabMenuControl extends BaseGUITest {
     }
 
     @Test (priority = 1, description = "Accessing the platform's homepage")
-    public void access(){
+    public void accessHomePage(){
         homePage.verifyHomePage();
         LOGGER.info("Home page opened");
     }
