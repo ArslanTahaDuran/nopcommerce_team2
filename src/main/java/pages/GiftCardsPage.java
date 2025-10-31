@@ -14,8 +14,6 @@ public class GiftCardsPage extends BasePage {
     @FindBy(xpath = "(//div[contains(@class,'product-item')])[3]")
     private WebElement selectGiftCard;
 
-    @FindBy(xpath = "(//div[@class='buttons'])[3]//button[@class='button-2 product-box-add-to-cart-button']")
-    private WebElement addCartButton;
 
     public GiftCardsPage(WebDriver driver) {
         super(driver);
@@ -36,10 +34,6 @@ public class GiftCardsPage extends BasePage {
         LOGGER.info("Gift card selected");
     }
 
-    public void clickAddCartButton(){
-        clickElement(addCartButton);
-        LOGGER.info("Add cart button clicked");
-    }
 
 
 }
