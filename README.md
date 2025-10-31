@@ -12,8 +12,8 @@ Automation test scenarios for [nopCommerce](https://demo.nopcommerce.com), built
 | US_502  | User Login                        | Tests login functionality with valid credentials                            |
 | US_503  | Login Combinations                | Covers both valid and invalid login attempts                                |
 | US_504  | Tab Menu Control                  | Verifies tab menu and submenu navigation                                    |
-| US_505  | Product Control in Tab Menu       | Ensures product listing and search consistency                              |
-| US_506  | Gift Ordering Process             | Validates gift card ordering with recipient details                         |
+| US_505_ControlProductsInTabMenu  | Product Control in Tab Menu       | Ensures product listing and search consistency                              |
+| US_506_Gift_Ordering_Process  | Gift Ordering Process             | Validates gift card ordering with recipient details                         |
 | US_507  | Computer Order Process            | Tests customizable desktop configuration and cart addition                  |
 | US_508  | Parameterized Search Process      | Validates XML-driven search and result accuracy                             |
 
