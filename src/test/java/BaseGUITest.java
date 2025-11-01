@@ -7,18 +7,18 @@ import utility.BaseDriver;
 
 public class BaseGUITest {
 
-    protected final Logger LOGGER = LogManager.getLogger(this.getClass());
-    WebDriver driver;
+        protected final Logger LOGGER = LogManager.getLogger(this.getClass());
+        WebDriver driver;
 
-    @BeforeClass
-    public void init() {
-        driver = BaseDriver.driver("https://demo.nopcommerce.com/");
-        LOGGER.info("Web sitesi acildi");
-    }
+        @BeforeClass
+        public void init(){
+            driver  = BaseDriver.driver("https://demo.nopcommerce.com/");
+            LOGGER.info("Web sitesi acildi");
+        }
 
-    @AfterClass
-    public void quitTest() {
-        driver.quit();
-        LOGGER.info("Tarayici kapandi");
+        @AfterClass
+        public void quitTest() {
+            driver.quit();
+            LOGGER.info("Tarayici kapandi");
+        }
     }
-}

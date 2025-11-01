@@ -18,36 +18,75 @@ public class US_504_TabMenuControl extends BaseGUITest {
     @BeforeClass
     public void pages(){
         homePage=new HomePage(driver);
+        computersPage=new ComputersPage(driver);
+        electronicsPage=new ElectronicsPage(driver);
+        apperalPage=new ApperalPage(driver);
+        booksPage=new BooksPage(driver);
+        digitalDownloadPage=new DigitalDownloadPage(driver);
+        giftCardsPage=new GiftCardsPage(driver);
+        jewelryPage=new JewelryPage(driver);
     }
 
     @Test (priority = 1, description = "Accessing the platform's homepage")
-    public void access(){
+    public void accessHomePage(){
         homePage.verifyHomePage();
         LOGGER.info("Home page opened");
     }
 
-    @Test(priority = 2,description = "Verifying that its elements are listed.")
-    public void verifyTabMenu(){
+    @Test(priority = 2,description = "")
+    public void clickMenus(){
+        homePage.clickComputersButton();
+        LOGGER.info("Computers button is clickable");
         computersPage.verifyComputersMenu();
+        LOGGER.info("Computers menus are displayed");
+
+        homePage.clickElectronicsButton();
+        LOGGER.info("Electronics button is clickable");
         electronicsPage.verifyElectronicsMenu();
+        LOGGER.info("Electronics menus are displayed");
+
+        homePage.clickApparelButton();
+        LOGGER.info("Apparel button is clickable");
         apperalPage.verifyApperalMenu();
-        booksPage.verifyBooksPage();
+        LOGGER.info("Apparel menus are displayed");
+
+        homePage.clickDigitalDownloadsButton();
+        LOGGER.info("Digital download button is clickable");
         digitalDownloadPage.verifyDigitalDownloadPage();
+        LOGGER.info("Digital download menus are displayed");
+
+        homePage.clickBooksButton();
+        LOGGER.info("Books button is clickable");
+        booksPage.verifyBooksPage();
+        LOGGER.info("Books menus are displayed");
+
+        homePage.clickJewelryButton();
+        LOGGER.info("Jewelry button is clickable");
         jewelryPage.verifyJewelryPage();
+        LOGGER.info("Jewelry menus are displayed");
+
+        homePage.clickGiftCardsButton();
+        LOGGER.info("Gift cards button is clickable");
         giftCardsPage.verifyGiftCards();
-        LOGGER.info("All menu are listed.");
+        LOGGER.info("Gift cards menus are displayed");
+
     }
 
     @Test(priority = 3,description = "Verifying that computers menu is clickable")
     public void clickComputersMenu(){
+        homePage.clickComputersButton();
         computersPage.clickDesktopButton();
+        LOGGER.info("Desktop is displayed");
         computersPage.clickNoteBooksButton();
+        LOGGER.info("Notebooks is displayed");
         computersPage.clickSoftwareButton();
+        LOGGER.info("Software is displayed");
         LOGGER.info("All submenus in computers menu are clickable");
     }
 
     @Test(priority = 4,description ="Verifying that electronics menu is clickable" )
     public void clickElectronicsMenu(){
+        homePage.clickElectronicsButton();
         electronicsPage.clickCameraAndPhotoButton();
         electronicsPage.clickCellPhonesButton();
         electronicsPage.clickOthersButton();
@@ -56,6 +95,7 @@ public class US_504_TabMenuControl extends BaseGUITest {
 
     @Test(priority = 5,description = "Verifying that apperal menu is clickable")
     public void clickApperalMenu(){
+        homePage.clickApparelButton();
         apperalPage.clickClothingButton();
         apperalPage.clickAccessoriesButton();
         apperalPage.clickShoesButton();
@@ -85,5 +125,4 @@ public class US_504_TabMenuControl extends BaseGUITest {
         jewelryPage.clickJewelryPage();
         LOGGER.info("Jewelry menu is clickable");
     }
-
 }

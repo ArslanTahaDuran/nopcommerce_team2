@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class DigitalDownloadPage extends BasePage {
 
-    @FindBy(xpath = "//ul[@class='top-menu mobile']//a[@href='/digital-downloads']")
+    @FindBy(xpath = "//ul[@class='list']//a[@href='/digital-downloads']")
     private WebElement digitalDownloadPage;
 
     public DigitalDownloadPage(WebDriver driver) {
